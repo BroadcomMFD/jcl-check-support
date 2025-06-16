@@ -83,7 +83,7 @@ This extension *does not* provide the ability for you to download from, upload t
 
 For basic syntax highlighting and symbol resolution, use the shortcut `Ctrl/Cmd + Shift + O`.
 
-![Syntax highlighting](/docs/images/jcl-hilite.png)
+![Syntax highlighting](https://github.com/BroadcomMFD/jcl-check-support/blob/main/images/jcl-hilite.png)
 
 ### JCL Linting
 
@@ -99,7 +99,7 @@ Perform linting to check your JCL for programmatic or stylistic errors. You can 
 
     JCL problems are highlighted in your code and displayed in the VS Code **Problems** view.
 
-![JCLCheck linting](/docs/images/jck-linting.gif)
+![JCLCheck linting](https://github.com/BroadcomMFD/jcl-check-support/blob/main/images/jck-linting.gif)
 
 ### Producing and sharing JCLCheck reports
 
@@ -116,7 +116,7 @@ Run JCLCheck against your code and produce convenient reports in markdown format
 
 The report opens in VS Code after it is generated. Reports are created in the folder that you specified in the prompt, or that you specify in the extension settings.
 
-![JCLCheck report generation](/docs/images/jck-report.gif)
+![JCLCheck report generation](https://github.com/BroadcomMFD/jcl-check-support/blob/main/images/jck-report.gif)
 
 **Tip:** If you want to convert your JCLCheck report from Markdown format into PDF, HTML, PNG, or JPEG, we recommend using the extension [Markdown PDF by yzane](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf).
 
@@ -138,7 +138,7 @@ For a quicker way to access the snippets:
 2. VS Code autocomplete should suggest the snippet.
 3. Select the suggested snippet and press Enter.
 
-![Snippets](/docs/images/jcl-snippets.gif)
+![Snippets](https://github.com/BroadcomMFD/jcl-check-support/blob/main/images/jcl-snippets.gif)
 
 ### Creating JCL snippets
 
