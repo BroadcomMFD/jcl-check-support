@@ -10,15 +10,13 @@ The JCL Check extension provides an interface in VS Code for developers and syst
 The extension provides the following benefits:
 
 - Edit JCL in VS Code to enhance developer productivity.
-- Use the syntax highlighting, linting, and auto-complete features to write JCL efficiently.
+- Use the linting feature to write JCL efficiently.
 - Ensure that JCL is valid prior to job submission by integrating with JCLCheck on the mainframe.
 - Produce JCLCheck reports in markdown format to share with your team.
-- Access a library of useful JCL snippets.
 
 **Tips:**
 
 - Use this extension in conjunction with [Zowe Explorer](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe) to enable a suite of mainframe functionality in VS Code.
-- The syntax highlighting capability is based on the [ibm-jcl extension](https://github.com/dkelosky/vscode-ibm-jcl).
 
 <!-- omit in toc -->
 ## Contents
@@ -54,10 +52,11 @@ zowe config init
 ```
 
 After you create the profile in the CLI, it will become available for use in VS Code. You can now perform JCLCheck actions in the extension using your default profile.
+The JCLCheck Features option must also be enabled as mentioned under Advanced configuration.
 
 ### Advanced configuration
 
-To access extension settings, navigate to **File > Preferences > Settings**, then select **Extensions > JCL configuration**.
+To access extension settings, navigate to **File > Preferences > Settings**, then select **Extensions > JCL Check**.
 
 You can configure the following options:
 
@@ -65,7 +64,6 @@ You can configure the following options:
 - **Automatic linting on save -** Choose to perform linting manually, or automatically lint for each local save. You must enable the 'JCLCheckfeatures' option to use linting. (Default: On)
 - **Reports location -** Specify the local folder where JCLCheck reports are saved. If you leave the setting blank, the extension prompts you for a location when you generate a report.
 - **Server tracing -** Traces communication between VS Code and the language server. Specify Off, Messages, or Verbose. (Default: Off)
-- **Syntax highlighting rules -** Configure syntax highlighting settings. For example, highlight the continuation column:
 
     ```json
     "[jcl]" : { "editor.rulers" : [71, 72, 80]},
@@ -78,12 +76,6 @@ Review the following use cases to understand how to use the JCL Check extension:
 ### Accessing JCL locally
 
 This extension *does not* provide the ability for you to download from, upload to, or submit jobs on the mainframe. To access mainframe code on your computer, use a tool such as Zowe CLI or Zowe Explorer.
-
-### JCL syntax highlighting
-
-For basic syntax highlighting and symbol resolution, use the shortcut `Ctrl/Cmd + Shift + O`.
-
-![Syntax highlighting](https://github.com/BroadcomMFD/jcl-check-support/blob/main/images/jcl-hilite.png)
 
 ### JCL Linting
 
@@ -99,7 +91,7 @@ Perform linting to check your JCL for programmatic or stylistic errors. You can 
 
     JCL problems are highlighted in your code and displayed in the VS Code **Problems** view.
 
-![JCLCheck linting](https://github.com/BroadcomMFD/jcl-check-support/blob/main/images/jck-linting.gif)
+![JCLCheck linting](/docs/images/jck-linting.gif)
 
 ### Producing and sharing JCLCheck reports
 
@@ -116,39 +108,15 @@ Run JCLCheck against your code and produce convenient reports in markdown format
 
 The report opens in VS Code after it is generated. Reports are created in the folder that you specified in the prompt, or that you specify in the extension settings.
 
-![JCLCheck report generation](https://github.com/BroadcomMFD/jcl-check-support/blob/main/images/jck-report.gif)
+![JCLCheck report generation](/docs/images/jck-report.gif)
 
 **Tip:** If you want to convert your JCLCheck report from Markdown format into PDF, HTML, PNG, or JPEG, we recommend using the extension [Markdown PDF by yzane](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf).
 
-### Using JCL snippets
+### Integration with JCL Language Support
 
-Before you write JCL from scratch, check the snippet library for useful job templates.
+The JCL Language Support extension enables syntax awareness features and code snippets for JCL code. JCL Language Support is automatically installed along with JCL Check. For more information, see the [JCL Language Support documentation](https://marketplace.visualstudio.com/items?itemName=broadcomMFD.jcl-language-support).
 
-**Follow these steps:**
-
-1. Open the command palette with `Ctrl/Cmd + Shift + P`
-2. Type "Insert Snippet".
-3. Click the command or press Enter.
-4. Choose the type of snippet you want to insert.
-5. Fill in the templated values to complete the JCL statement.
-
-For a quicker way to access the snippets:
-
-1. Begin typing the name of a snippet (e.g. IEFBR14) in the editor.
-2. VS Code autocomplete should suggest the snippet.
-3. Select the suggested snippet and press Enter.
-
-![Snippets](https://github.com/BroadcomMFD/jcl-check-support/blob/main/images/jcl-snippets.gif)
-
-### Creating JCL snippets
-
-You can add your own JCL templates to the snippet library.
-
-Navigate to **File > Preferences > User Snippets** and select the JCL language.
-
-Refer to [Create your own snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets) in the VS Code documentation for detailed information about creating the snippet.
-
-For more information about this extension, please visit the [documentation on Broadcom TechDocs](https://techdocs.broadcom.com/content/broadcom/techdocs/us/en/ca-mainframe-software/automation/ca-jclcheck-workload-automation/12-0/building/interfaces-with-other-products/jcl-language-support-extension-for-vs-code.html).
+For more information about this extension, please visit the [documentation on Broadcom TechDocs](https://techdocs.broadcom.com/us/en/ca-mainframe-software/automation/ca-jclcheck-workload-automation/12-0/building/interfaces-with-other-products/jcl-check-extension-for-vs-code.html).
 
 ---------------------------------------------------------------
 <!-- omit in toc -->
