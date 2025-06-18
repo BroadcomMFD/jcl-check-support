@@ -91,7 +91,7 @@ Perform linting to check your JCL for programmatic or stylistic errors. You can 
 
     JCL problems are highlighted in your code and displayed in the VS Code **Problems** view.
 
-![JCLCheck linting](/images/jck-linting.gif)
+![JCLCheck linting](/docs/images/jck-linting.gif)
 
 ### Producing and sharing JCLCheck reports
 
@@ -108,7 +108,7 @@ Run JCLCheck against your code and produce convenient reports in markdown format
 
 The report opens in VS Code after it is generated. Reports are created in the folder that you specified in the prompt, or that you specify in the extension settings.
 
-![JCLCheck report generation](/images/jck-report.gif)
+![JCLCheck report generation](/docs/images/jck-report.gif)
 
 **Tip:** If you want to convert your JCLCheck report from Markdown format into PDF, HTML, PNG, or JPEG, we recommend using the extension [Markdown PDF by yzane](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf).
 
