@@ -35,3 +35,7 @@ All notable changes to the "JCL Check" extension will be documented in this file
 - Added dependency of JCL Language Support for basic JCL syntax highlighting, coloring and generating code snippets.
 - Added support for Zowe V3
 - Support for Zowe Explorer
+
+## `3.0.1`
+
+- Updated README and documentation.
