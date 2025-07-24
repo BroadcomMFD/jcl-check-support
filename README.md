@@ -1,9 +1,12 @@
-<!-- omit in toc -->
-# JCL Check
+<div id="header" align="center">
 
-[![license](https://img.shields.io/badge/license-Broadcom-green)](/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues-raw/BroadcomMFD/jcl-check-support)](https://github.com/BroadcomMFD/jcl-check-support/issues)
 [![downloads](https://img.shields.io/visual-studio-marketplace/d/broadcomMFD.jcl-check-support)](https://marketplace.visualstudio.com/items?itemName=broadcomMFD.jcl-check-support)
-[![issues](https://img.shields.io/github/issues-raw/BroadcomMFD/jcl-check-support)](https://github.com/BroadcomMFD/jcl-check-support/issues)
+[![Code4z](https://img.shields.io/badge/Code4z-marketplace-cc092f)](https://marketplace.visualstudio.com/search?term=code4z&target=VSCode)
+
+</div>
+
+# JCL Check
 
 The JCL Check extension provides an interface in VS Code for developers and system administrators to interact with Job Control Language (JCL) on IBM z/OS mainframes.
 
@@ -14,18 +17,20 @@ The extension provides the following benefits:
 - Ensure that JCL is valid prior to job submission by integrating with JCLCheck on the mainframe.
 - Produce JCLCheck reports in markdown format to share with your team.
 
-**Tips:**
+<br />
+<img align="left" alt="This extension is part of the Code4z experience" width="80" height="82" src="https://raw.githubusercontent.com/BroadcomMFD/code4z/refs/heads/main/icon5.png" />
 
-- Use this extension in conjunction with [Zowe Explorer](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe) to enable a suite of mainframe functionality in VS Code.
+JCL Check is part of the [Code4z](https://techdocs.broadcom.com/code4z) experience from Broadcom, which offers a modern experience for mainframe application developers. To get started with Code4z, check out our foundational [extension pack](https://marketplace.visualstudio.com/items?itemName=broadcomMFD.code4z-extension-pack).
 
-<!-- omit in toc -->
+<br />
+
 ## Contents
 
-- [Software Requirements](#software-requirements)
+- [Address Software Requirements](#address-software-requirements)
 - [Configuring](#configuring)
 - [Using](#using)
 
-## Software Requirements
+## Address Software Requirements
 
 You can use the JCL syntax highlighting/coloring and snippets generation features provided by the JCL Language support extension. The JCL Language Support extension is installed along with the JCL Check extension.
 
@@ -33,7 +38,8 @@ If you want to use JCLCheck's linting and reporting features, you must meet the 
 
 - JCLCheck Workload Automation v12.0 is installed and configured on a mainframe system with the latest maintenance applied.
 - An instance of JCLCheck Workload Automation v12.0 REST API server is running.
-- [Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli.html) and the [JCLCheck Plug-in for Zowe CLI](https://techdocs.broadcom.com/us/en/ca-mainframe-software/devops/enterprise-support-for-zowe/1-0/zowe-cli/using-zowe-cli/available-cli-plug-ins/jclcheck-plug-in-for-zowe-cli.html) is installed on your PC.
+- Integrate this extension with [Zowe Explorer](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe) and set up a Zowe profile.
+- If you are using this extension without Zowe Explorer then you should have [Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli.html) and the [JCLCheck Plug-in for Zowe CLI](https://techdocs.broadcom.com/us/en/ca-mainframe-software/devops/enterprise-support-for-zowe/1-0/zowe-cli/using-zowe-cli/available-cli-plug-ins/jclcheck-plug-in-for-zowe-cli.html) installed on your PC.
 
 ## Configuring
 
@@ -89,7 +95,7 @@ Perform linting to check your JCL for programmatic or stylistic errors. You can 
 2. Type "Check your JCL".
 3. Click the command or press Enter to perform linting.
 
-    JCL problems are highlighted in your code and displayed in the VS Code **Problems** view.
+   JCL problems are highlighted in your code and displayed in the VS Code **Problems** view.
 
 ![JCLCheck linting](/docs/images/jck-linting.gif)
 
@@ -112,33 +118,36 @@ The report opens in VS Code after it is generated. Reports are created in the fo
 
 **Tip:** If you want to convert your JCLCheck report from Markdown format into PDF, HTML, PNG, or JPEG, we recommend using the extension [Markdown PDF by yzane](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf).
 
-### Integration with JCL Language Support
+### Integrate with Zowe Explorer and JCL Language Support
+
+Integrate this extension with [Zowe Explorer](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe) and set up a Zowe profile to enable hyperlinks to PDS members and USS files in your JCL code. You can also use Zowe Explorer to submit jobs, and to access your mainframe data sets containing JCL directly from VS Code.
 
 The JCL Language Support extension enables syntax awareness features and code snippets for JCL code. JCL Language Support is automatically installed along with JCL Check. For more information, see the [JCL Language Support documentation](https://marketplace.visualstudio.com/items?itemName=broadcomMFD.jcl-language-support).
+
+<div align="center">
+<a href="https://www.openmainframeproject.org/all-projects/zowe/conformance"><img alt="This extension is Zowe v3 conformant" src="https://artwork.openmainframeproject.org/other/zowe-conformant/zowev3/explorer-vs-code/color/zowe-conformant-zowev3-explorer-vs-code-color.png" width=208 height=156 /></a>
+</div>
 
 For more information about this extension, please visit the [documentation on Broadcom TechDocs](https://techdocs.broadcom.com/us/en/ca-mainframe-software/automation/ca-jclcheck-workload-automation/12-0/building/interfaces-with-other-products/jcl-check-extension-for-vs-code.html).
 
 ---------------------------------------------------------------
-<!-- omit in toc -->
+
 ## **Technical Assistance and Support for JCL Check extension**
 
 The JCL Check extension is made available to customers on Visual Studio Code Marketplace in accordance with the terms and conditions contained in the provided End-User License Agreement (EULA).
 
-If you are on active support for JCLCheck Workload Automation or Brightside, technical assistance and support is provided to Broadcom customers in accordance with the terms, guidelines, details and parameters located within Broadcom’s “Working with Support” guide located at:
-
-https://techdocs.broadcom.com/us/product-content/admin-content/ca-support-policies.html?intcmp=footernav
+If you are on active support for JCLCheck Workload Automation, you get technical assistance and support in accordance with the terms, guidelines, details, and parameters that are located within the Broadcom [Working with Support](https://support.broadcom.com/external/content/release-announcements/CA-Support-Policies/6933) guide.
 
 This support generally includes:
 
 - Telephone and online access to technical support
 - Ability to submit new incidents 24x7x365
 - 24x7x365 continuous support for Severity 1 incidents
-- 24x7x365 access to Broadcom Support Online
+- 24x7x365 access to Broadcom Support
 - Interactive remote diagnostic support
+- Technical support cases must be submitted to Broadcom in accordance with guidance provided in “Working with Support”.
 
-Technical support cases must be submitted to Broadcom in accordance with guidance provided in “Working with Support”.
-
-Note: To receive technical assistance and support, you must remain compliant with “Working with Support”, be current on all applicable licensing and maintenance requirements, and maintain an environment in which all computer hardware, operating systems, and third party software associated with the affected Broadcom software are on the releases and version levels from the manufacturer that Broadcom designates as compatible with the software.  Changes you elect to make to your operating environment could detrimentally affect the performance of Broadcom software and Broadcom shall not be responsible for these effects or any resulting degradation in performance of the Broadcom software.
+Note: To receive technical assistance and support, you must remain compliant with “Working with Support”, be current on all applicable licensing and maintenance requirements, and maintain an environment in which all computer hardware, operating systems, and third party software associated with the affected Broadcom software are on the releases and version levels from the manufacturer that Broadcom designates as compatible with the software. Changes you elect to make to your operating environment could detrimentally affect the performance of Broadcom software and Broadcom shall not be responsible for these effects or any resulting degradation in performance of the Broadcom software. Severity 1 cases must be opened via telephone and elevations of lower severity incidents to Severity 1 status must be requested via telephone.
 
 ------------------------------------------------------------------------------------------------
 Copyright © 2020 Broadcom. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
