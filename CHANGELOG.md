@@ -4,6 +4,10 @@ All notable changes to the "JCL Check" extension will be documented in this file
 
 ## Recent Changes
 
+- Vault Configuration and library updates.
+
+## `3.0.2`
+
 - Updated the `ProfilesLoader` class to reuse the cache from Zowe Explorer if the user has it installed. Otherwise, the extension continues to use its own instance of the `ProfileInfo` class to access/manage Zowe profiles.
 - Fixed an issue where the user was prompted to enter in credentials after already responding to the same prompts from the Zowe Explorer extension. Now, once the user has entered in their credentials through Zowe Explorer, the JCL Check extension reuses those credentials and no longer prompts the user.
 - Changes for Code4z related documentation.
