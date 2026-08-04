@@ -4,6 +4,28 @@ All notable changes to the "JCL Check" extension will be documented in this file
 
 ## Recent Changes
 
+- Refine VS Code behavior for user profile execution.
+- Update JCLCheck scan logic to handle non-standard JCL return codes.
+- Additional messages for non‑standard maximum severity code and non-zero JCLCheck codes are written to the `Output` view under the `JCL Check` channel.
+- Enable JCLCheck Features by default.
+- Security updates.
+- Updates dependencies to maintain technical currency
+- Remediates CVE-2026-33228
+- Remediates CVE-2026-4800
+- Remediates CVE-2026-29786
+- Remediates CVE-2026-24842
+- Remediates CVE-2026-2327
+- Remediates CVE-2026-24001
+- Remediates CVE-2026-26996
+- Remediates CVE-2026-27601
+- Remediates CVE-2026-27903
+- Remediates CVE-2026-27904
+- Remediates CVE-2026-26960
+- Remediates CVE-2026-32141
+- Remediates CVE-2026-33750
+
+## `3.0.3`
+
 - Vault Configuration and library updates.
 
 ## `3.0.2`
